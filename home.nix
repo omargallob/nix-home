@@ -16,6 +16,8 @@
     jq
     ripgrep
     fzf
+    bat
+    eza
   ];
 
   # Step 2: a couple of "programs" modules. These aren't just package
