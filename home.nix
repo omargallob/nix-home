@@ -44,6 +44,19 @@
   # doesn't need a matching entry in home.packages.
   programs.atuin.enable = true;
 
+  # Declarative git config — generates ~/.gitconfig. No git config --global
+  # needed; edit here instead, and it's version-controlled with everything
+  # else.
+  programs.git = {
+    enable = true;
+    settings = {
+      user.name = "omargallob";
+      user.email = "omargallob@gmail.com";
+      init.defaultBranch = "main";
+      pull.rebase = false;
+    };
+  };
+
   # Lets `home-manager` manage itself as a package (so `home-manager`
   # the command stays available even before you've installed it any
   # other way).
