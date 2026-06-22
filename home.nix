@@ -18,6 +18,8 @@
     fzf
     bat
     eza
+    yq-go  # nixpkgs splits this from the older Python "yq" package
+    go
   ];
 
   # Step 2: a couple of "programs" modules. These aren't just package
