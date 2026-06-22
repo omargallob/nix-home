@@ -39,6 +39,11 @@
 
   programs.direnv.enable = true;
 
+  # Shell history sync/search. Like starship/direnv, this is a full module —
+  # it installs the atuin binary AND wires the zsh hook into ~/.zshrc, so it
+  # doesn't need a matching entry in home.packages.
+  programs.atuin.enable = true;
+
   # Lets `home-manager` manage itself as a package (so `home-manager`
   # the command stays available even before you've installed it any
   # other way).
