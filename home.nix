@@ -20,6 +20,8 @@
     eza
     yq-go  # nixpkgs splits this from the older Python "yq" package
     go
+    nodejs_22  # versioned attr, matches what devops-starter pinned
+    ruby
   ];
 
   # Step 2: a couple of "programs" modules. These aren't just package
