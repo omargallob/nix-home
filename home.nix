@@ -27,9 +27,15 @@
     enable = true;
     oh-my-zsh = {
       enable = true;
-      theme = "robbyrussell";
+      # No theme here — starship (below) owns the prompt instead. Running
+      # both an oh-my-zsh theme and starship at once means two prompts
+      # fighting over the same line.
     };
   };
+
+  # Cross-shell prompt. programs.starship.enable generates the init snippet
+  # and wires it into ~/.zshrc for you — no manual `eval "$(starship init zsh)"`.
+  programs.starship.enable = true;
 
   programs.direnv.enable = true;
 
